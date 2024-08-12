@@ -8,7 +8,7 @@ function Splash() {
       <h2 className="w-1/2 text-md py-2">
         Fill out this form to access future modern's invite-only talent pool of
         Fortune 500-level engineers, scientists, mathematicians, technologists,
-        designers, artists, business administrators, and professionals.
+        designers, artists, business administrators, and credentialed professionals.
       </h2>
     </div>
   );
