@@ -8,7 +8,7 @@ function GettingStarted() {
       <Splash />
       <div className={cn("flex-[0_0_50%]")}>
         <div className="flex flex-col items-center">
-          <form className="h-lvh flex flex-col justify-center relative inset-y-0 right-0 overflow-auto box-border">
+          <form className="h-lvh flex flex-col justify-center py-8">
             <div className="flex">
               <section className="flex flex-col py-2">
                 <label className="text-xs flex-1 box-border">First Name</label>
