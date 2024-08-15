@@ -4,37 +4,39 @@ import React from "react";
 
 function GettingStarted() {
   return (
-    <div className="flex justify-between content-center items-center">
+    <div className="flex justify-start items-stretch flex-wrap">
       <Splash />
-      <section className={cn("md:w-1/2 p-12")}>
-        <form>
-          <div className="flex">
+      <div className={cn("flex-[0_0_50%]")}>
+        <div className="flex flex-col items-center">
+          <form className="h-lvh flex flex-col justify-center relative inset-y-0 right-0 overflow-auto box-border">
+            <div className="flex">
+              <section className="flex flex-col py-2">
+                <label className="text-xs flex-1 box-border">First Name</label>
+                <input className="border" type="text"></input>
+              </section>
+              <section className="flex flex-col py-2 pl-4">
+                <label className="text-xs">Last Name</label>
+                <input className="border" type="text"></input>
+              </section>
+            </div>
             <section className="flex flex-col py-2">
-              <label className="text-xs flex-1 box-border">First Name</label>
+              <label className="text-xs">Work Email</label>
+              <input className="border pl-4" type="text"></input>
+            </section>
+            <section className="flex flex-col py-2">
+              <label className="text-xs">Phone</label>
               <input className="border" type="text"></input>
             </section>
-            <section className="flex flex-col py-2 pl-4">
-              <label className="text-xs">Last Name</label>
+            <section className="flex flex-col py-2">
+              <label className="text-xs">Project Description</label>
               <input className="border" type="text"></input>
             </section>
-          </div>
-          <section className="flex flex-col py-2">
-            <label className="text-xs">Work Email</label>
-            <input className="border pl-4" type="text"></input>
-          </section>
-          <section className="flex flex-col py-2">
-            <label className="text-xs">Phone</label>
-            <input className="border" type="text"></input>
-          </section>
-          <section className="flex flex-col py-2">
-            <label className="text-xs">Project Description</label>
-            <input className="border" type="text"></input>
-          </section>
-          <section className="py-2">
-            <button className="bg-black text-white px-8 py-4">Submit</button>
-          </section>
-        </form>
-      </section>
+            <section className="py-2">
+              <button className="bg-black text-white px-8 py-4">Submit</button>
+            </section>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
