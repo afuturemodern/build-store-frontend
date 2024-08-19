@@ -4,26 +4,32 @@ import React from "react";
 
 function GettingStarted() {
   return (
-    <div className={cn(
-    "flex flex-col", 
-    "lg:flex-row"
-    )}>
+    <div className={cn("flex flex-col", "lg:flex-row")}>
       <Splash />
-      <form className={cn(
-        "flex flex-col gap-4", 
-        "justify-center",
-        "w-full",
-        "h-lvh",
-        "lg: w-1/2",
-        "lg:px-24"
-        )}>
+      <form
+        className={cn(
+          "flex flex-col gap-4",
+          "justify-center",
+          "w-full",
+          "h-lvh",
+          "lg: w-1/2",
+          "lg:px-24"
+        )}
+      >
         <h1>Sign up to $BUILD your team.</h1>
-        <div className="flex flex-col md:flex-row">
-          <section className="flex flex-col">
-            <label className="text-xs flex-1 box-border">First Name</label>
+        <div className={cn(
+          "flex flex-col", 
+          "md:flex-row justify-between"
+          )}>
+          <section className="flex flex-col grow pr-8">
+            <label className={cn(
+              "text-xs"
+              )}>
+              First Name
+            </label>
             <input className="border" type="text"></input>
           </section>
-          <section className="flex flex-col">
+          <section className="flex flex-col grow">
             <label className="text-xs">Last Name</label>
             <input className="border" type="text"></input>
           </section>
