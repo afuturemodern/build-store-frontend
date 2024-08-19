@@ -13,7 +13,8 @@ function Splash() {
   return (
     <div
       className={cn(
-        "h-lvh flex flex-col justify-between items-start",
+        "flex flex-col justify-between items-start",
+        "h-lvh",
         "px-8",
         "bg-[#BBDCE3]",
         "lg:flex",

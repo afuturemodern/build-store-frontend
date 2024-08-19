@@ -5,15 +5,16 @@ import React from "react";
 function GettingStarted() {
   return (
     <div className={cn(
-    "flex flex-col lg:flex-row", 
-    "justify-start items-stretch"
+    "flex flex-col", 
+    "lg:flex-row"
     )}>
       <Splash />
       <form className={cn(
         "flex flex-col gap-4", 
         "justify-center",
-        "content-center",
-        "w-1/2",
+        "w-full",
+        "h-lvh",
+        "lg: w-1/2",
         "lg:px-24"
         )}>
         <h1>Sign up to $BUILD your team.</h1>
