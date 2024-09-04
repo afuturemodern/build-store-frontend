@@ -10,7 +10,6 @@ function GettingStarted() {
         className={cn(
           "flex flex-col gap-4",
           "justify-center",
-          // "grow",
           "w-auto",
           "h-lvh",
           "lg: w-1/2",
@@ -20,7 +19,6 @@ function GettingStarted() {
         <h1>Sign up to $BUILD your team.</h1>
         <div className={cn(
           "flex flex-col", 
-          // "w-full",
           "md:flex-row justify-between"
           )}>
           <section className={cn(
