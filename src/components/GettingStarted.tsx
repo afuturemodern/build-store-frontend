@@ -10,7 +10,8 @@ function GettingStarted() {
         className={cn(
           "flex flex-col gap-4",
           "justify-center",
-          "w-full",
+          // "grow",
+          "w-auto",
           "h-lvh",
           "lg: w-1/2",
           "lg:px-24"
@@ -19,9 +20,13 @@ function GettingStarted() {
         <h1>Sign up to $BUILD your team.</h1>
         <div className={cn(
           "flex flex-col", 
+          // "w-full",
           "md:flex-row justify-between"
           )}>
-          <section className="flex flex-col grow pr-8">
+          <section className={cn(
+            "flex flex-col grow", 
+            "lg: pr-8"
+            )}>
             <label className={cn(
               "text-xs"
               )}>
@@ -36,7 +41,7 @@ function GettingStarted() {
         </div>
         <section className="flex flex-col">
           <label className="text-xs">Work Email</label>
-          <input className="border" type="text"></input>
+          <input className="border w-full" type="text"></input>
         </section>
         <section className="flex flex-col">
           <label className="text-xs">Phone</label>
