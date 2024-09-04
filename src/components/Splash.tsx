@@ -31,7 +31,7 @@ function Splash() {
           $BUILD with the best and brightest.
         </h1>
         <h2 className="box-border block isolate">
-          Fill out this form to hire future modern's invite-only talent pool of
+          Fill out this form to hire future modern&apos;s invite-only talent pool of
           Fortune 500-level engineers, scientists, mathematicians,
           technologists, designers, artists, business administrators, and
           credentialed professionals.
