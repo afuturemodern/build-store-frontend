@@ -1,12 +1,9 @@
-import Splash from "@/components/Splash";
 import { cn } from "@/utils/cn";
-import React from "react";
+import React from 'react'
 
-function GettingStarted() {
+function form() {
   return (
-    <div className={cn("flex flex-col", "lg:flex-row")}>
-      <Splash />
-      <form
+    <form
         className={cn(
           "flex flex-col gap-4",
           "justify-center",
@@ -53,8 +50,7 @@ function GettingStarted() {
           <button className="bg-black text-white">Submit</button>
         </section>
       </form>
-    </div>
-  );
+  )
 }
 
-export default GettingStarted;
+export default form;

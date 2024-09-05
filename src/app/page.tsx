@@ -1,4 +1,4 @@
-import Homepage from "@/components/Homepage";
+import Homepage from "@/app/Homepage";
 import { cn } from "@/utils/cn";
 import React from "react";
 
