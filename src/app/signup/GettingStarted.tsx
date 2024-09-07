@@ -1,4 +1,4 @@
-import Splash from "@/app/form/Splash";
+import Splash from "@/app/signup/Splash";
 import { cn } from "@/utils/cn";
 import React from "react";
 

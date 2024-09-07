@@ -11,7 +11,7 @@ function Header() {
             <a href="/" className={cn("")}>
                 <img className="h-16 aspect-square" src="logo.png" alt="Logo" />
             </a>
-            <h2>
+            <h2 className="text-center">
                 An ecosystem for world-$BUILDing people and products.
             </h2>
             <button>
