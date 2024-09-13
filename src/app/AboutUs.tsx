@@ -209,7 +209,7 @@ function AboutUs() {
           Lenovo, Align Technology, Ericsson, WebMD, The Los Angeles Department
           of Water and Power, Vattenfall, Bird Rides, Ontraport, The
           Smithsonian, Columbia Records, Bad Boy Records, Mad Decent Records,
-          Complex Magazine and Lee Men's Denim.
+          Complex Magazine and Lee Men&apos;s Denim.
         </p>
       </div>
     </section>
