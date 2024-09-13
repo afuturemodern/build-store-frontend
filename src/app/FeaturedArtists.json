@@ -1,0 +1,74 @@
+[
+    {
+        "img_url":"chibu.jpeg",
+        "name":"chibu",
+        "role":"Data"
+
+    },
+    {
+        "img_url":"jamar.webp",
+        "name":"Jamar",
+        "role":"Sales, Operations"
+
+    },
+    {
+        "img_url":"manny.png",
+        "name":"Manny, PE",
+        "role":"Real Estate, Construction"
+
+    },
+    {
+        "img_url":"ron.jpg",
+        "name":"Ron",
+        "role":"People, Brand"
+
+    },
+    {
+        "img_url":"jay.png",
+        "name":"Jay, PhD pending",
+        "role":"Physics, Generalist"
+
+    },
+    {
+        "img_url":"rob.jpg",
+        "name":"Rob",
+        "role":"Revenue Operations"
+
+    },
+    {
+        "img_url":"tolgay.webp",
+        "name":"Tolgay",
+        "role":"Backend Software"
+
+    },
+    {
+        "img_url":"basak.jpg",
+        "name":"Basak",
+        "role":"Design"
+
+    },
+    {
+        "img_url":"ifeanyi.jpeg",
+        "name":"Ifeanyi",
+        "role":"Finance"
+
+    },
+    {
+        "img_url":"bbg.png",
+        "name":"Big Baby Gandhi, PharmD",
+        "role":"Medical Communications, Marketing, AI"
+
+    },
+    {
+        "img_url":"aliza.jpg",
+        "name":"Aliza, MD in 2025",
+        "role":"Medicine, Advisor"
+
+    },
+    {
+        "img_url":"michael.jpeg",
+        "name":"Michael, PhD dropout",
+        "role":"Software, Advisor"
+
+    }
+]
