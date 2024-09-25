@@ -15,7 +15,10 @@ function OurTeam() {
       <h1 className="text-2xl">Our Team</h1>
       <h2 className="text-xl">Core Contributors</h2>
       <div className={cn(
-        "flex flex-wrap items-center gap-6"
+        "gap-6",
+        "flex flex-wrap justify-around",
+        "items-center",
+        "content-center"
       )}>
         {featuredArtists.map((artist, idx, oArr) => {
           return (

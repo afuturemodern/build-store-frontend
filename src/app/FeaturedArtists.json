@@ -72,9 +72,15 @@
 
     },
     {
-        "img_url":"/people/choirboy.jpeg",
+        "img_url":"/people/choirboy.jpg",
         "name":"Choirboy Dank",
         "role":"Audio"
+
+    },
+    {
+        "img_url":"/people/trevor.jpg",
+        "name":"Trevor",
+        "role":"Blockchain, AI"
 
     }
 ]

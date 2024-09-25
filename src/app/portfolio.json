@@ -1,0 +1,44 @@
+[
+  {
+    "link": "https://tba-auctions-admin.vercel.app/",
+    "img_url": "/portfolio/dossiers.webp",
+    "name": "Dossiers",
+    "description": "The first NFT auction platform using the ERC-6551 Tokenbound wallet specification."
+  },
+  {
+    "link": "https://www.2050vision.org/",
+    "img_url": "/portfolio/vision2050.webp",
+    "name": "2050 Vision",
+    "description": "We designed and developed the interactive web version of The Rising Majority's 2050 manifesto."
+  },
+  {
+    "link": "https://fundthesouth.org/",
+    "img_url": "/portfolio/spf.jpg",
+    "name": "Southern Power Fund",
+    "description": "We designed and developed a modern, functional org website for Southern Power Fund."
+  },
+  {
+    "link": "https://dataxplorer.ai/",
+    "img_url": "/portfolio/dx.webp",
+    "name": "DataXplorer",
+    "description": "We implemented the process architecture for the startup consumer intelligence platform."
+  },
+  {
+    "link": "https://notes.catalog.works/posts/jerkin-imperiled-positive-conscious-rap-essay",
+    "img_url": "/portfolio/catalog.webp",
+    "name": "Catalog",
+    "description": "We wrote some words for the Catalog Editorial Program."
+  },
+  {
+    "link": "https://app.mayk.it/creators/ChoirboyDank",
+    "img_url": "",
+    "name": "mayk.it",
+    "description": "Produced instrumentals for AI music platform mayk.it, resulting in over 682 production credits."
+  },
+  {
+    "link": "https://immigrantlypod.com/",
+    "img_url": "/portfolio/immigrantly.png",
+    "name": "Immigrantly",
+    "description": "We redesigned and rebuilt the website for a multicultural podcast startup"
+  }
+]
