@@ -17,7 +17,7 @@ function OurPartners() {
         )}>
             {affiliates.map((partner, idx, oArr) => {
                 return(
-                    <div>
+                    <div key={idx}>
                         <a href={partner.link}>
                             <img src={partner.img_url}></img>
                         </a>
