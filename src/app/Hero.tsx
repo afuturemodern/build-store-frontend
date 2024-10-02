@@ -3,20 +3,35 @@ import React from "react";
 
 function Hero() {
   return (
-    <section>
+    <section className={cn(
+      "text-white bg-black",
+      // "px-4",
+      // "h-lvh",
+      "flex flex-col"
+      )}>
       <div
         className={cn(
-          "text-white bg-black",
-          "px-2",
-          "h-lvh",
+          "py-16",
+          "px-8",
+          "gap-8",
           "flex flex-col",
           "justify-around",
           "items-center",
           "text-center"
+
         )}
       >
-        <h1 className={cn("text-5xl")}>$BUILD with the best.</h1>
-        <p className={cn("text-xl")}>
+        <h1 className={cn(
+          "text-5xl", 
+          "font-bold"
+          )}>
+            $BUILD with the best.
+            </h1>
+        <p className={cn(
+          "text-xl", 
+          "max-w-72",
+          "md:min-w-fit"
+          )}>
           $BUILD <strong>a team</strong> from our handpicked talent pool of
           Fortune 500-level creative, science, technology, engineering, math
           (STEM), and business professionals — perfectly matched to your
@@ -24,15 +39,39 @@ function Hero() {
         </p>
         <div
           className={cn(
-            "flex flex-col",
-            "lg: flex flex-row justify-around w-full"
+            "flex flex-col justify-between gap-4"
+            // "lg: flex flex-row justify-around w-full"
           )}
         >
-          <button className="bg-white text-black">Get Started</button>
-          <button className="bg-white text-black">Schedule a Call</button>
+          <button
+            className={cn(
+              "border border-white",
+              "leading-8",
+              "min-w-72",
+              "rounded-full"
+            )}
+          >
+            Get Started
+          </button>
+          <button
+            className={cn(
+              "border border-white",
+              "leading-8",
+              "min-w-72",
+              "rounded-full"
+            )}
+          >
+            Schedule a Call
+          </button>
         </div>
       </div>
-      <img className="w-full" src="hero.webp" alt="Hero Image"></img>
+      <img className={cn(
+        "pb-32", 
+        "w-full" 
+      )}
+        src="hero.webp" 
+        alt="Hero Image">
+        </img>
     </section>
   );
 }
