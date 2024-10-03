@@ -6,18 +6,18 @@ function Header() {
     <header
       className={cn(
         "flex justify-between items-center",
-        "h-24",
+        "h-fit",
         "basis-0",
         "grow",
         "bg-white",
         "p-4"
       )}
     >
-      <div className={cn("flex flex-col", "content-start", "w-1/2", "h-16")}>
+      <div className={cn("flex flex-col", "content-start")}>
         <a href="/">
           <img
             className={cn(
-              "h-12"
+              "h-16"
               // , "aspect-square"
             )}
             src="fm clr turtle alt full.svg"
