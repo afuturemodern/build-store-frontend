@@ -6,20 +6,40 @@ function OurWork() {
   return (
     <section
       className={cn(
-        "bg-black text-white",
-        "flex flex-col",
-        "text-center",
-        "items-center"
+        "bg-black",
+        "flex flex-col"
       )}
     >
-      <h1 className="text-2xl">Our Work</h1>
+    <div
+      className={cn("bg-[#bbdce3]", 
+      "text-black",
+      "w-full", 
+      "py-12", 
+      "px-6", 
+      "relative"
+      )}>
+      <h1 className={cn("text-3xl font-bold")}>our work.</h1>
+    </div>
       <div>
         {portfolio.map((work, idx, oArr) => {
           return (
-            <div key={idx}>
+            <div key={idx}
+            style={{ backgroundImage: `url(${work.img_url})` }}
+            className={cn(
+              "text-white",
+              "bg-cover",
+              "bg-center",
+              "min-h-screen",
+              // "w-lvw", 
+              "py-12", 
+              "px-6",
+              "flex flex-col",
+              "justify-start",
+              "items-start"
+            )}>
               <a href={work.link}>
-                <img className="w-lvw" src={work.img_url}></img>
-                <h2>{work.name}</h2>
+                {/* <img className="w-lvw" src={work.img_url}></img> */}
+                <h2 className={cn("text-2xl font-bold")}>{work.name}</h2>
                 <p>{work.description}</p>
               </a>
             </div>

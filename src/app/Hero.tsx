@@ -66,7 +66,6 @@ function Hero() {
         </div>
       </div>
       <img className={cn(
-        "pb-32", 
         "w-full" 
       )}
         src="hero.webp" 
