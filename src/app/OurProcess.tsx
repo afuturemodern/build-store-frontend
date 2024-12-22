@@ -14,12 +14,13 @@ function OurProcess() {
         return (
           <div
             key={idx}
-            style={{ backgroundImage: `url(${step.img_url})` }}
+            style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(${step.img_url})` }}
             className={cn(
               "text-white",
               "bg-cover",
               "bg-center",
               "min-h-screen",
+              // "bg-black",
               // "w-lvw", 
               "py-12", 
               "px-6",
@@ -29,8 +30,11 @@ function OurProcess() {
             )}
           >
             {/* <img className="w-lvw" src={step.img_url} alt={step.alt}></img> */}
-            <h2 className={cn("text-2xl font-bold")}>{step.name}</h2>
-            <p>{step.description}</p>
+            <h2 className={cn(
+              "text-4xl", 
+              "pb-4")}>{step.name}</h2>
+            <p className={cn(
+              "text-2xl")}>{step.description}</p>
           </div>
         );
       })}
