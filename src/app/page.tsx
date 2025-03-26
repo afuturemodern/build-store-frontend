@@ -6,16 +6,14 @@ import Header from "../components/Header";
 
 export default function Home() {
   return (
-    <main>
-      <body className={cn(
-        "flex flex-col justify-center align-center", 
-        "bg-white"
-    )}>
-        <Header/>
-        <Homepage/>
-        <Footer/>
-
-      </body>
-    </main>
+    <body
+      className={cn("flex flex-col justify-center align-center", "bg-white")}
+    >
+      <main>
+        <Header />
+        <Homepage />
+        <Footer />
+      </main>
+    </body>
   );
 }

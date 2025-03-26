@@ -21,6 +21,8 @@ function OurPartners() {
       </div>
       <div className={cn(
         "flex flex-col items-center",
+        "w-4/5",
+        "m-auto",
         "gap-2")}>
         {affiliates.map((partner, idx, oArr) => {
           return (

@@ -1,30 +1,30 @@
 [
     {
-        "img_url": "process/understand.webp",
+        "img_url": "process/understand.jpg",
         "alt": "People discussing with speech bubbles containing puzzle pieces",
         "name": "Understand",
         "description": "your existing business model and practices"
     },
     {
-        "img_url": "/process/analyze.webp",
+        "img_url": "/process/analyze.jpg",
         "alt": "Brain icon and group of people discussing",
         "name": "Analyze",
         "description": "your current business processes and structure"
     },
     {
-        "img_url": "/process/strategize.png",
+        "img_url": "/process/strategize.jpg",
         "alt": "Two people playing chess observing the board",
         "name": "Strategize",
         "description": "to identify and select the best action course"
     },
     {
-        "img_url": "/process/implement.png",
+        "img_url": "/process/implement.jpg",
         "alt": "Designed diagram of conceptual icons",
         "name": "Implement",
         "description": "new strategic frameworks"
     },
     {
-        "img_url": "/process/execute.png",
+        "img_url": "/process/execute.jpg",
         "alt": "Iconographic drawing with charts, gears, and productivity symbols",
         "name": "Execute",
         "description": "against those frameworks leveraging our network of 700+ service provider partners and members"
