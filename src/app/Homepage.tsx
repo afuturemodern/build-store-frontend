@@ -1,6 +1,4 @@
-import { cn } from "@/utils/cn";
 import React from 'react'
-import Header from "../components/Header";
 import Hero from "./Hero";
 import AboutUs from "./AboutUs";
 import OurProcess from "./OurProcess";
