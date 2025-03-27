@@ -18,7 +18,7 @@ function OurTeam() {
         "px-6", 
         "relative"
         )}>
-        <h1 className={cn("text-3xl font-bold")}>our team.</h1>
+        <h2 className={cn("text-3xl font-bold")}>our team.</h2>
         <p>
           core contributors
         </p>

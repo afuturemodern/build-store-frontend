@@ -1,14 +1,23 @@
 [
     {
         "link": "https://affiliate.notion.so/4lhuu9s2ilgr",
+        "name": "Notion",
+        "tagline": "The best place to organized your ideas",
+        "description": "lorem ipsum facto.",
         "img_url":"/partners/notion.avif"
     },
     {
         "link": "https://gatsby.events/rsvp/request-a-demo/gatsby/register?ref=future-modern",
+        "name": "Gatsby",
+        "tagline": "Number one investor events organizer.",
+        "description": "lorem ipsum facto.",
         "img_url":"/partners/gatsby.svg"
     },
     {
         "link": "https://versabot.co/?code=huk_CW02ZY7-XL9MRMrXuA",
+        "name": "Versabot",
+        "tagline": "Agentic AI",
+        "description": "lorem ipsum facto.",
         "img_url":"/partners/versabot.png"
     }
 ]

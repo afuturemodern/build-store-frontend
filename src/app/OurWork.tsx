@@ -18,7 +18,7 @@ function OurWork() {
       "px-6", 
       "relative"
       )}>
-      <h1 className={cn("text-3xl font-bold")}>our work.</h1>
+      <h2 className={cn("text-3xl font-bold")}>our work.</h2>
     </div>
       <div>
         {portfolio.map((work, idx, oArr) => {
@@ -39,7 +39,7 @@ function OurWork() {
             )}>
               <a href={work.link}>
                 {/* <img className="w-lvw" src={work.img_url}></img> */}
-                <h2 className={cn("text-2xl font-bold")}>{work.name}</h2>
+                <h3 className={cn("text-2xl font-bold")}>{work.name}</h3>
                 <p>{work.description}</p>
               </a>
             </div>

@@ -1,12 +1,11 @@
 import { cn } from "@/utils/cn";
 import React from "react";
 import affiliates from "./affiliates.json";
+import { Affiliate } from "@/components/Affiliate";
 
 function OurPartners() {
   return (
-    <section className={cn("bg-black", 
-    "flex flex-col"
-    )}>
+    <section className={cn("bg-black", "flex flex-col")}>
       <div
         className={cn(
           "bg-[#bbdce3]",
@@ -17,20 +16,36 @@ function OurPartners() {
           "relative"
         )}
       >
-        <h1 className={cn("text-3xl font-bold")}>our partners.</h1>
+        <h2 className={cn("text-3xl font-bold")}>our partners.</h2>
       </div>
-      <div className={cn(
-        "flex flex-col items-center",
-        "w-4/5",
-        "m-auto",
-        "gap-2")}>
+      <div
+        className={cn(
+          "flex flex-col items-center",
+          "py-4",
+          "w-full",
+          "m-auto",
+          "gap-2"
+        )}
+      >
         {affiliates.map((partner, idx, oArr) => {
           return (
-            <div key={idx}>
-              <a href={partner.link}>
-                <img className={cn("w-screen")} src={partner.img_url}></img>
-              </a>
-            </div>
+            <Affiliate
+              img_url={partner.img_url}
+              link={partner.link}
+              name={partner.name}
+              tagline={partner.tagline}
+              description={partner.description}
+              key={partner.name}
+              className={cn("w-full")}
+            ></Affiliate>
+            // <div key={idx}>
+            //   <div className={cn("flex flex-col justify-start gap-2")}>
+            //     <a href={partner.link}>
+            //       <img className={cn("w-screen")} src={partner.img_url}></img>
+            //     </a>
+            //     <h3 className="text-xs">{partner.name}</h3>
+            //   </div>
+            // </div>
           );
         })}
       </div>
