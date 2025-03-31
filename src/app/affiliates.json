@@ -9,15 +9,15 @@
     {
         "link": "https://gatsby.events/rsvp/request-a-demo/gatsby/register?ref=future-modern",
         "name": "Gatsby",
-        "tagline": "Number one investor events organizer.",
-        "description": "lorem ipsum facto.",
+        "tagline": "Collaborative Event Planning Tool",
+        "description": "The best-in-class platform for organizing branded corporate events with everything your event needs to succeed. Manage your guestlist, build beautiful event landing pages, send invitations, and effortless share context with team members in one streamlined tool.",
         "img_url":"/partners/gatsby.svg"
     },
     {
         "link": "https://versabot.co/?code=huk_CW02ZY7-XL9MRMrXuA",
         "name": "Versabot",
-        "tagline": "Agentic AI",
-        "description": "lorem ipsum facto.",
+        "tagline": "Multimodel AI Sales and Marketing Agent",
+        "description": "Convert visitors to buyers on autopilot with Versabot. Versabot's AI automates follow-up, outreach, and appointment setting. It engages with leads 24/7 via Email, Phone, SMS, and integrates with Your existing processes.",
         "img_url":"/partners/versabot.png"
     }
 ]
