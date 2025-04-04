@@ -1,7 +1,7 @@
 import { cn } from "@/utils/cn";
 import React from 'react'
 
-function form() {
+function Form() {
   return (
     <form
         className={cn(
@@ -53,4 +53,4 @@ function form() {
   )
 }
 
-export default form;
+export default Form;
