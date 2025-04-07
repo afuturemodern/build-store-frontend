@@ -13,10 +13,10 @@ function Form() {
     >
       <h1>Sign up to $BUILD your team.</h1>
       <div className={cn(
-        "flex flex-wrap grow-0 shrink-0"
+        "flex"
       )}>
         <section className={cn(
-          "flex flex-col w-full"
+          "flex flex-col w-1/2"
         )}>
           <label className={cn(
             "text-xs"
@@ -25,7 +25,7 @@ function Form() {
           </label>
           <input className="border" type="text"></input>
         </section>
-        <section className="flex flex-col w-full">
+        <section className="flex flex-col w-1/2">
           <label className="text-xs">Last Name</label>
           <input className="border" type="text"></input>
         </section>
