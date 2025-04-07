@@ -4,52 +4,48 @@ import React from 'react'
 function Form() {
   return (
     <form
-        className={cn(
-          "flex flex-col gap-4",
-          "justify-center",
-          "w-auto",
-          "h-lvh",
-          "lg: w-1/2",
-          "lg:px-24"
-        )}
-      >
-        <h1>Sign up to $BUILD your team.</h1>
-        <div className={cn(
-          "flex flex-col", 
-          "md:flex-row justify-between"
+      className={cn(
+        "flex flex-col gap-4",
+        "justify-center",
+        "h-lvh",
+        "px-48"
+      )}
+    >
+      <h1>Sign up to $BUILD your team.</h1>
+      <div className={cn(
+        "flex flex-wrap grow-0 shrink-0"
+      )}>
+        <section className={cn(
+          "flex flex-col w-full"
+        )}>
+          <label className={cn(
+            "text-xs"
           )}>
-          <section className={cn(
-            "flex flex-col grow", 
-            "lg: pr-8"
-            )}>
-            <label className={cn(
-              "text-xs"
-              )}>
-              First Name
-            </label>
-            <input className="border" type="text"></input>
-          </section>
-          <section className="flex flex-col grow">
-            <label className="text-xs">Last Name</label>
-            <input className="border" type="text"></input>
-          </section>
-        </div>
-        <section className="flex flex-col">
-          <label className="text-xs">Work Email</label>
-          <input className="border w-full" type="text"></input>
-        </section>
-        <section className="flex flex-col">
-          <label className="text-xs">Phone</label>
+            First Name
+          </label>
           <input className="border" type="text"></input>
         </section>
-        <section className="flex flex-col">
-          <label className="text-xs">Project Description</label>
+        <section className="flex flex-col w-full">
+          <label className="text-xs">Last Name</label>
           <input className="border" type="text"></input>
         </section>
-        <section className="">
-          <button className="bg-black text-white">Submit</button>
-        </section>
-      </form>
+      </div>
+      <section className="flex flex-col">
+        <label className="text-xs">Work Email Address</label>
+        <input className="border w-full" type="text"></input>
+      </section>
+      <section className="flex flex-col">
+        <label className="text-xs">Phone Number</label>
+        <input className="border" type="text"></input>
+      </section>
+      <section className="flex flex-col">
+        <label className="text-xs">Project Description</label>
+        <input className="border" type="text"></input>
+      </section>
+      <section className="">
+        <button className="bg-black text-white">Submit</button>
+      </section>
+    </form>
   )
 }
 
