@@ -18,7 +18,6 @@ function Header() {
           <img
             className={cn(
               "h-16"
-              // , "aspect-square"
             )}
             src="fm clr turtle alt full.svg"
             alt="Logo"
@@ -29,13 +28,13 @@ function Header() {
       <a href="/signup">
         <button
           className={cn(
-            "bg-white",
-            "text-black",
-            "border-black",
-            "border",
-            "rounded-lg",
-            "leading-10",
-            "min-w-72"
+            "bg-white"
+            ,"text-black"
+            ,"border-black"
+            ,"border"
+            ,"rounded-lg"
+            ,"leading-10"
+            ,"w-56"
           )}
         >
           <span className={cn("flex justify-center content-center")}>

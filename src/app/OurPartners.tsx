@@ -38,14 +38,6 @@ function OurPartners() {
               key={partner.name}
               className={cn("w-full")}
             ></Affiliate>
-            // <div key={idx}>
-            //   <div className={cn("flex flex-col justify-start gap-2")}>
-            //     <a href={partner.link}>
-            //       <img className={cn("w-screen")} src={partner.img_url}></img>
-            //     </a>
-            //     <h3 className="text-xs">{partner.name}</h3>
-            //   </div>
-            // </div>
           );
         })}
       </div>

@@ -7,7 +7,6 @@ function AboutUs() {
     <section
       className={cn(
         "bg-black text-white"
-        // "text-center"
       )}
     >
       <div

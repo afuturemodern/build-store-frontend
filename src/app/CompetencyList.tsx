@@ -161,8 +161,7 @@ const CompetencyComponent = ({
 
 const CompetencyList = () => {
   return (
-    <div className={cn("flex py-4 px-6",
-        // "basis-0 grow"
+    <div className={cn("flex flex-wrap py-4 px-6"
     )}>
       {compentenciesSection.map((comp, idx) => (
         <CompetencyComponent {...comp} key={idx} />
