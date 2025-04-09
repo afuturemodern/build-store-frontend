@@ -13,10 +13,10 @@ function Form() {
     >
       <h1>Sign up to $BUILD your team.</h1>
       <div className={cn(
-        "flex"
+        "flex -mx-4"
       )}>
         <section className={cn(
-          "flex flex-col w-1/2"
+          "flex flex-col w-1/2 px-4"
         )}>
           <label className={cn(
             "text-xs"
@@ -25,7 +25,7 @@ function Form() {
           </label>
           <input className="border" type="text"></input>
         </section>
-        <section className="flex flex-col w-1/2">
+        <section className="flex flex-col w-1/2 px-4">
           <label className="text-xs">Last Name</label>
           <input className="border" type="text"></input>
         </section>
@@ -42,9 +42,21 @@ function Form() {
         <label className="text-xs">Project Description</label>
         <input className="border" type="text"></input>
       </section>
-      <section className="">
-        <button className="bg-black text-white">Submit</button>
-      </section>
+      <button
+          className={cn(
+            "bg-white",
+            "text-black",
+            "border-black",
+            "border",
+            "rounded-lg",
+            "leading-10",
+            "min-w-72"
+          )}
+        >
+          <span className={cn("flex justify-center content-center")}>
+            Submit
+          </span>
+        </button>
     </form>
   )
 }
