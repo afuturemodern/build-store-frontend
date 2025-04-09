@@ -8,7 +8,8 @@ function Form() {
         "flex flex-col gap-4",
         "justify-center",
         "h-lvh",
-        "px-48"
+        "max-w-[345px]",
+        "px-8"
       )}
     >
       <h1>Sign up to $BUILD your team.</h1>
@@ -49,8 +50,7 @@ function Form() {
             "border-black",
             "border",
             "rounded-lg",
-            "leading-10",
-            "min-w-72"
+            "leading-10"
           )}
         >
           <span className={cn("flex justify-center content-center")}>

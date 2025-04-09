@@ -5,7 +5,7 @@ import React from "react";
 
 function GettingStarted() {
   return (
-    <div className={cn("flex flex-col", "lg:flex-row")}>
+    <div className={cn("flex flex-col items-center", "lg:flex-row")}>
       <Splash />
       <Form />
     </div>

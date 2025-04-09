@@ -16,6 +16,7 @@ function Splash() {
         "flex flex-col justify-between items-start",
         "h-lvh",
         "px-8",
+        "pt-2",
         "bg-[#BBDCE3]",
         "lg:flex",
         "lg:w-1/2",
