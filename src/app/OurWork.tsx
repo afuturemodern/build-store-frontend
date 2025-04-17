@@ -30,7 +30,6 @@ function OurWork() {
               "bg-cover",
               "bg-center",
               "min-h-screen",
-              // "w-lvw", 
               "py-12", 
               "px-6",
               "flex flex-col",
@@ -38,7 +37,6 @@ function OurWork() {
               "items-start"
             )}>
               <a href={work.link}>
-                {/* <img className="w-lvw" src={work.img_url}></img> */}
                 <h3 className={cn("text-2xl font-bold")}>{work.name}</h3>
                 <p>{work.description}</p>
               </a>
