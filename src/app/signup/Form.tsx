@@ -9,19 +9,18 @@ function Form() {
         event.preventDefault();
         const form = event.target as HTMLFormElement;
         const formData = new FormData(form);
-        const first_name = formData.get("first_name");
-        const last_name = formData.get("last_name");
-        const email_address = formData.get("email_address");
-        const phone_number = formData.get("phone_number");
-        const project_description = formData.get("project_description");
+        const firstname = formData.get("first_name");
+        const lastname = formData.get("last_name");
+        const email = formData.get("email_address");
+        const phone = formData.get("phone_number");
+        // const project_description = formData.get("project_description");
         fetch("/api/crm", {
           method: "POST",
           body: JSON.stringify({
-            first_name,
-            last_name,
-            email_address,
-            phone_number,
-            project_description,
+            firstname,
+            lastname,
+            email,
+            phone
           }),
         })
           .then((result) => {

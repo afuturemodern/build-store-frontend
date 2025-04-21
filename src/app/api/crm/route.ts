@@ -14,13 +14,17 @@ const HUBSPOT_ACCESS_TOKEN = process.env.HUBSPOT_ACCESS_TOKEN;
 export async function POST(request: Request) {
   const formResult = await request.json();
 
+  const body = JSON.stringify({"properties": formResult})
+
+  // console.log(body)
+
   const fetchResult = await fetch(HUBSPOT_ENDPOINT_URL, {
     headers: {
       Authorization: `Bearer ${HUBSPOT_ACCESS_TOKEN}`,
       "Content-Type": "application/json",
     },
     method: "POST",
-    body: formResult,
+    body: body
   });
 
   console.log(fetchResult);
