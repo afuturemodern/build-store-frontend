@@ -1,9 +1,19 @@
 "use client";
 import { cn } from "@/utils/cn";
-import React from "react";
+import React, { useState } from "react";
+
+type FormStatus = "init" | "success" | "loading" | "error" | "error.conflict";
 
 function Form() {
-  return (
+  const [formStatus, setFormStatus] = useState<FormStatus>("init");
+  const errorForm = (
+    <div>
+      <div>Oh No</div>
+      <button onClick={()=>{setFormStatus("init")}}>Go Back</button>
+    </div>
+  );
+  const successForm = <div>Success</div>;
+  const initForm = (
     <form
       onSubmit={(event) => {
         event.preventDefault();
@@ -20,7 +30,7 @@ function Form() {
             firstname,
             lastname,
             email,
-            phone
+            phone,
           }),
         })
           .then((result) => {
@@ -28,6 +38,11 @@ function Form() {
           })
           .then((data) => {
             console.log(data);
+            if (data.error) {
+              setFormStatus("error");
+            } else if (!data.error) {
+              setFormStatus("success");
+            }
           });
       }}
       className={cn(
@@ -83,6 +98,14 @@ function Form() {
       </button>
     </form>
   );
+
+  return formStatus === "init"
+    ? initForm
+    : formStatus.startsWith("error")
+    ? errorForm
+    : formStatus === "success"
+    ? successForm
+    : errorForm;
 }
 
 export default Form;

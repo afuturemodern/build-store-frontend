@@ -18,5 +18,9 @@ export async function POST(request: Request) {
 
   console.log(contactRequestResponse);
 
-  return Response.json({ hello: "world" });
+  if (contactRequestResponse.status==="error") {
+    return Response.json({error: true})
+  }
+
+  return Response.json({ error: false });
 }

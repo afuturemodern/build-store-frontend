@@ -1,14 +1,6 @@
 import { cn } from "@/utils/cn";
 import React from "react";
 
-// function logo() {
-//   return (
-//     <a href="/" className={cn("")}>
-//           <img className="h-16 aspect-square" src="logo.png" alt="Logo" />
-//         </a>
-//   );
-// }
-
 function Splash() {
   return (
     <div
@@ -16,7 +8,6 @@ function Splash() {
         "flex flex-col justify-between items-start",
         "h-lvh",
         "px-8",
-        "pt-2",
         "bg-[#BBDCE3]",
         "lg:flex",
         "lg:w-1/2",
