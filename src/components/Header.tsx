@@ -1,47 +1,56 @@
 import { cn } from "@/utils/cn";
-import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 function Header() {
   return (
     <header
       className={cn(
+        "sticky top-0 z-50",
         "flex justify-between items-center",
-        "h-fit",
-        "basis-0",
-        "grow",
-        "bg-white",
-        "p-4"
+        "bg-white/95 backdrop-blur-sm",
+        "border-b border-gray-100",
+        "px-4 py-3 sm:px-6 lg:px-8",
+        "transition-all duration-200"
       )}
+      role="banner"
     >
-      <div className={cn("flex flex-col", "content-start")}>
-        <a href="/">
-          <img
-            className={cn(
-              "h-16"
-            )}
-            src="fm clr turtle alt full.svg"
-            alt="Logo"
+      <div className={cn("flex flex-col sm:flex-row sm:items-center gap-2")}>
+        <Link href="/" className="focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 rounded-md">
+          <Image
+            className="h-12 w-auto sm:h-16"
+            src="/fm clr turtle alt full.svg"
+            alt="$BUILD Store - Home"
+            width={200}
+            height={64}
+            priority
           />
-        </a>
-        <h2 className="text-start">world-$BUILDing people+products.</h2>
+        </Link>
+        <h2 className={cn(
+          "text-sm sm:text-base font-medium text-gray-700",
+          "sm:ml-3 leading-tight"
+        )}>
+          world-$BUILDing people+products.
+        </h2>
       </div>
-      <a href="/signup">
-        <button
+      
+      <nav role="navigation" aria-label="Main navigation">
+        <Link 
+          href="/signup"
           className={cn(
-            "bg-white"
-            ,"text-black"
-            ,"border-black"
-            ,"border"
-            ,"rounded-lg"
-            ,"leading-10"
-            ,"w-56"
+            "inline-flex items-center justify-center",
+            "bg-black text-white hover:bg-gray-800",
+            "border border-black hover:border-gray-800",
+            "rounded-lg px-4 py-2 sm:px-6 sm:py-3",
+            "text-sm sm:text-base font-medium",
+            "transition-colors duration-200",
+            "focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2",
+            "active:scale-95 transform"
           )}
         >
-          <span className={cn("flex justify-center content-center")}>
-            $BUILD a team
-          </span>
-        </button>
-      </a>
+          $BUILD a team
+        </Link>
+      </nav>
     </header>
   );
 }
