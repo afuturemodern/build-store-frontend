@@ -2,15 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes scroll-left {
+@keyframes scroll-single {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-33.333%);
+    transform: translateX(-50%);
   }
 }
 
-.animate-scroll-left {
-  animation: scroll-left 25s linear infinite;
+.animate-scroll-single {
+  animation: scroll-single 6s linear infinite;
 }
+
