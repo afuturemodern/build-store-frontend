@@ -1,4 +1,5 @@
 import { cn } from "@/utils/cn";
+import Link from "next/link";
 import React from "react";
 
 function Hero() {
@@ -11,14 +12,14 @@ function Hero() {
       )}>
       <div
         className={cn(
-          "py-16",
-          "px-8",
-          "gap-8",
+          "py-12 sm:py-16 lg:py-20 xl:py-24",
+          "px-4 sm:px-6 lg:px-8",
+          "max-w-7xl mx-auto w-full",
+          "gap-6 sm:gap-8 lg:gap-10",
           "flex flex-col",
-          "justify-around",
+          "justify-center",
           "items-center",
           "text-center"
-
         )}
       >
         <h1 className={cn(
@@ -43,26 +44,34 @@ function Hero() {
             // "lg: flex flex-row justify-around w-full"
           )}
         >
-          <button
+          <Link
+            href="/signup"
             className={cn(
-              "border border-white",
+              "inline-flex items-center justify-center",
+              "border border-white text-white hover:bg-white hover:text-black",
               "leading-8",
               "min-w-72",
-              "rounded-full"
+              "rounded-full",
+              "transition-colors duration-200",
+              "focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
             )}
           >
             Get Started
-          </button>
-          <button
+          </Link>
+          <Link
+            href="/signup"
             className={cn(
-              "border border-white",
+              "inline-flex items-center justify-center",
+              "border border-white text-white hover:bg-white hover:text-black",
               "leading-8",
               "min-w-72",
-              "rounded-full"
+              "rounded-full",
+              "transition-colors duration-200",
+              "focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
             )}
           >
             Schedule a Call
-          </button>
+          </Link>
         </div>
       </div>
       <img className={cn(
