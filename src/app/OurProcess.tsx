@@ -6,9 +6,17 @@ function OurProcess() {
   return (
     <section className={cn("bg-black", "flex flex-col")}>
       <div
-        className={cn("bg-[#bbdce3]", "w-full", "py-12", "px-6", "relative")}
+        className={cn(
+          "bg-[#bbdce3]", 
+          "w-full", 
+          "py-8 sm:py-12 lg:py-16", 
+          "px-4 sm:px-6 lg:px-8", 
+          "relative"
+        )}
       >
-        <h2 className={cn("text-3xl font-bold")}>our process.</h2>
+        <div className="max-w-7xl mx-auto">
+          <h2 className={cn("text-2xl sm:text-3xl lg:text-4xl font-bold text-left")}>our process.</h2>
+        </div>
       </div>
       {processSteps.map((step, idx, oArr) => {
         return (
@@ -21,19 +29,28 @@ function OurProcess() {
               "text-white",
               "bg-cover",
               "bg-center",
-              "min-h-screen",
-              // "bg-black",
-              // "w-lvw",
-              "py-12",
-              "px-6",
+              "min-h-[70vh] sm:min-h-[80vh] lg:min-h-screen",
+              "py-12 sm:py-16 lg:py-20",
+              "px-4 sm:px-6 lg:px-8",
               "flex flex-col",
-              "justify-start",
+              "justify-end",
               "items-start"
             )}
           >
-            {/* <img className="w-lvw" src={step.img_url} alt={step.alt}></img> */}
-            <h3 className={cn("text-4xl", "pb-4")}>{step.name}</h3>
-            <p className={cn("text-2xl")}>{step.description}</p>
+            <div className="max-w-4xl">
+              <h3 className={cn(
+                "text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold", 
+                "mb-4 sm:mb-6"
+              )}>
+                {step.name}
+              </h3>
+              <p className={cn(
+                "text-lg sm:text-xl lg:text-2xl", 
+                "leading-relaxed max-w-3xl"
+              )}>
+                {step.description}
+              </p>
+            </div>
           </div>
         );
       })}

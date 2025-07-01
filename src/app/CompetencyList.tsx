@@ -145,14 +145,50 @@ const CompetencyComponent = ({
 }) => {
   const IconComponent = iconMap[icon];
   return (
-    <div>
-      <div className={cn("flex gap-2")}>
-        <IconComponent fill={color} />
-        <h3 style={{ color: color }} className={cn('uppercase underline')}>{headingText}</h3>
+    <div className={cn(
+      "group p-6 sm:p-8"
+    )}>
+      {/* Header */}
+      <div className={cn(
+        "flex items-center gap-3 mb-6",
+        "pb-4 border-b border-gray-700"
+      )}>
+        <div className={cn(
+          "p-2 rounded-lg"
+        )} style={{ backgroundColor: `${color}20` }}>
+          <IconComponent fill={color} />
+        </div>
+        <h3 
+          style={{ color: color }} 
+          className={cn(
+            'text-lg sm:text-xl lg:text-2xl font-bold uppercase tracking-wider'
+          )}
+        >
+          {headingText}
+        </h3>
       </div>
-      <ul>
+      
+      {/* Skills List */}
+      <ul className={cn(
+        "space-y-2 sm:space-y-3",
+        "text-gray-300"
+      )}>
         {listItems.map((item, idx) => (
-          <li key={idx}>{item}</li>
+          <li 
+            key={idx}
+            className={cn(
+              "flex items-start gap-3",
+              "text-sm sm:text-base leading-relaxed"
+            )}
+          >
+            <div 
+              className={cn(
+                "w-2 h-2 rounded-full mt-2 flex-shrink-0"
+              )}
+              style={{ backgroundColor: color }}
+            />
+            <span className="capitalize">{item}</span>
+          </li>
         ))}
       </ul>
     </div>
@@ -161,11 +197,20 @@ const CompetencyComponent = ({
 
 const CompetencyList = () => {
   return (
-    <div className={cn("flex flex-wrap py-4 px-6"
+    <div className={cn(
+      "max-w-7xl mx-auto",
+      "py-8 sm:py-12 lg:py-16",
+      "px-4 sm:px-6 lg:px-8"
     )}>
-      {compentenciesSection.map((comp, idx) => (
-        <CompetencyComponent {...comp} key={idx} />
-      ))}
+      <div className={cn(
+        "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4",
+        "gap-0 md:gap-6 lg:gap-8",
+        "divide-y md:divide-y-0 md:divide-x divide-gray-700"
+      )}>
+        {compentenciesSection.map((comp, idx) => (
+          <CompetencyComponent {...comp} key={idx} />
+        ))}
+      </div>
     </div>
   );
 };
