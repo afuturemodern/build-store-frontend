@@ -7,11 +7,12 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
 .animate-scroll-single {
-  animation: scroll-single 6s linear infinite;
+  animation: scroll-single 5s linear infinite;
+  animation-fill-mode: forwards;
 }
 

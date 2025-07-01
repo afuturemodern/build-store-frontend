@@ -1,4 +1,5 @@
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -74,12 +75,15 @@ function Hero() {
           </Link>
         </div>
       </div>
-      <img className={cn(
-        "w-full" 
-      )}
-        src="hero.webp" 
-        alt="Hero Image">
-        </img>
+      <Image 
+        className={cn(
+          "w-full" 
+        )}
+        src="/hero.webp" 
+        alt="Hero Image"
+        width={1000}
+        height={1000}
+      />
     </section>
   );
 }
