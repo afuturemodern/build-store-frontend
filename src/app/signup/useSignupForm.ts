@@ -30,7 +30,6 @@ export function useSignupForm() {
         return result.json();
       })
       .then((data) => {
-        console.log(data);
         setLoading(false);
         if (data.error) {
           setFormStatus("error");
@@ -38,9 +37,8 @@ export function useSignupForm() {
           setFormStatus("success");
         }
       })
-      .catch((error) => {
+      .catch(() => {
         setLoading(false);
-        console.error(error)
         setFormStatus("error")
       });
   }
