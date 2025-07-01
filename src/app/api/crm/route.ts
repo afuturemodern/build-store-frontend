@@ -1,9 +1,30 @@
 import { NextRequest } from "next/server";
 import { HUBSPOT_ACCESS_TOKEN, HUBSPOT_CONTACT_ENDPOINT } from "./util";
 import { validateContactRequest } from "./validation";
+import { rateLimiter } from "./rateLimiter";
 
 export async function POST(request: NextRequest) {
   try {
+    // Rate limiting
+    const clientIp = request.headers.get('x-forwarded-for') || 
+                    request.headers.get('x-real-ip') || 
+                    'unknown';
+    
+    const { allowed, remainingRequests } = rateLimiter.check(clientIp);
+    
+    if (!allowed) {
+      return Response.json(
+        { error: true, message: "Too many requests. Please try again later." },
+        { 
+          status: 429,
+          headers: {
+            'X-RateLimit-Limit': '10',
+            'X-RateLimit-Remaining': '0',
+            'Retry-After': '60'
+          }
+        }
+      );
+    }
     // Validate request
     const validation = await validateContactRequest(request);
     
@@ -41,7 +62,15 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    return Response.json({ error: false });
+    return Response.json(
+      { error: false },
+      {
+        headers: {
+          'X-RateLimit-Limit': '10',
+          'X-RateLimit-Remaining': remainingRequests.toString()
+        }
+      }
+    );
   } catch (error) {
     return Response.json(
       { error: true, message: "An error occurred" },
