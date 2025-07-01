@@ -1,4 +1,5 @@
 import { cn } from "@/utils/cn";
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -10,7 +11,7 @@ function Footer() {
       <div className={cn(
         "flex flex-row"
       )}>
-        <a href="/">
+        <Link href="/">
           <img
             className={cn(
               "h-16"
@@ -20,7 +21,7 @@ function Footer() {
             alt="Logo"
           />
           <p className="text-white">Future Modern Builderberg LLC &copy; 2024</p>
-        </a>
+        </Link>
       </div>
       <div className={cn("flex justify-around")}>
         <a href="https://opencollective.com/futuremodern" target="_blank">

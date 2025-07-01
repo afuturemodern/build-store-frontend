@@ -1,4 +1,5 @@
 import { cn } from "@/utils/cn";
+import Link from "next/link";
 import React from "react";
 
 function Header() {
@@ -14,7 +15,7 @@ function Header() {
       )}
     >
       <div className={cn("flex flex-col", "content-start")}>
-        <a href="/">
+        <Link href="/">
           <img
             className={cn(
               "h-16"
@@ -22,10 +23,10 @@ function Header() {
             src="fm clr turtle alt full.svg"
             alt="Logo"
           />
-        </a>
+        </Link>
         <h2 className="text-start">world-$BUILDing people+products.</h2>
       </div>
-      <a href="/signup">
+      <Link href="/signup">
         <button
           className={cn(
             "bg-white"
@@ -41,7 +42,7 @@ function Header() {
             $BUILD a team
           </span>
         </button>
-      </a>
+      </Link>
     </header>
   );
 }
