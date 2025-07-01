@@ -16,8 +16,10 @@ function Header() {
       )}
       role="banner"
     >
-
-      <Link href="/" className="focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 rounded-md flex-shrink-0">
+      <Link
+        href="/"
+        className="focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 rounded-md flex-shrink-0"
+      >
         <Image
           className="h-12 w-auto sm:h-16"
           src="/fm clr turtle alt full.svg"
@@ -29,21 +31,44 @@ function Header() {
       </Link>
 
       {/* Scrolling text container */}
-      <section className={cn(
-        "text-xs sm:text-sm md:text-base font-medium text-gray-700",
-        "whitespace-nowrap",
-        "w-full",
-        "flex",
-        "overflow-hidden",
-        "mx-2",
-        //"tracking-widest"
-      )}>
-        <p className={cn("w-full flex-none ", "animate-scroll-single")}>world-$BUILDing people+products.</p>
-        <p className={cn("w-full flex-none ", "animate-scroll-single")}>world-$BUILDing people+products.</p>
+      <section
+        className={cn(
+          "text-xs sm:text-sm md:text-base font-medium text-gray-700",
+          "whitespace-nowrap",
+          "w-full",
+          "flex",
+          "overflow-hidden",
+          "mx-2"
+        )}
+      >
+        <p
+          className={cn(
+            "w-full flex-none ",
+            "animate-scroll-mobile",
+            "sm:animate-scroll-tablet",
+            "md:animate-scroll-desktop",
+            "lg:animate-scroll-extra-wide"
+          )}
+        >
+          world-$BUILDing people+products.
+        </p>
+        <p
+          className={cn(
+            "w-full flex-none ",
+            "animate-scroll-mobile",
+            "sm:animate-scroll-tablet",
+            "md:animate-scroll-single"
+          )}
+        >
+          world-$BUILDing people+products.
+        </p>
       </section>
 
-
-      <nav role="navigation" aria-label="Main navigation" className="flex-shrink-0">
+      <nav
+        role="navigation"
+        aria-label="Main navigation"
+        className="flex-shrink-0"
+      >
         <Link
           href="/signup"
           className={cn(
