@@ -44,14 +44,7 @@ function OurWork() {
               key={idx}
               className={cn(
                 "relative group overflow-hidden",
-                // Responsive heights optimized for different content types
-                work.name === "Dossiers" && "min-h-[45vh] sm:min-h-[55vh] lg:min-h-[65vh] xl:min-h-[70vh]",
-                work.name === "2050 Vision" && "min-h-[50vh] sm:min-h-[60vh] lg:min-h-[70vh] xl:min-h-[75vh]",
-                work.name === "Southern Power Fund" && "min-h-[45vh] sm:min-h-[55vh] lg:min-h-[65vh] xl:min-h-[70vh]",
-                work.name === "DataXplorer" && "min-h-[48vh] sm:min-h-[58vh] lg:min-h-[68vh] xl:min-h-[73vh]",
-                work.name === "Catalog" && "min-h-[50vh] sm:min-h-[60vh] lg:min-h-[70vh] xl:min-h-[75vh]",
-                work.name === "mayk.it" && "min-h-[45vh] sm:min-h-[55vh] lg:min-h-[65vh] xl:min-h-[70vh]",
-                work.name === "Immigrantly" && "min-h-[48vh] sm:min-h-[58vh] lg:min-h-[68vh] xl:min-h-[73vh]",
+                "min-h-[300px] sm:min-h-[400px] md:min-h-[450px] lg:min-h-[500px] xl:min-h-[550px]",
                 "flex items-end"
               )}
             >
@@ -63,16 +56,10 @@ function OurWork() {
                 className={cn(
                   "transition-transform duration-700",
                   "group-hover:scale-105",
-                  // Optimized object positioning for each project
-                  work.name === "Dossiers" && "object-cover object-center",
-                  work.name === "2050 Vision" && "object-cover object-top",
-                  work.name === "Southern Power Fund" && "object-cover object-center",
-                  work.name === "DataXplorer" && "object-cover object-center",
-                  work.name === "Catalog" && "object-cover object-center",
-                  work.name === "mayk.it" && "object-cover object-center",
-                  work.name === "Immigrantly" && "object-cover object-center"
+                  "object-cover",
+                  work.name === "2050 Vision" ? "object-top" : "object-center"
                 )}
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 50vw"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 priority={idx < 2}
               />
               
@@ -86,7 +73,7 @@ function OurWork() {
               {/* Content */}
               <div className={cn(
                 "relative z-10 w-full",
-                "p-6 sm:p-8 lg:p-10",
+                "p-4 sm:p-6 md:p-8 lg:p-10",
                 "bg-gradient-to-t from-black/90 via-black/50 to-transparent"
               )}>
                 <Link 
@@ -100,16 +87,16 @@ function OurWork() {
                   )}
                 >
                   <h3 className={cn(
-                    "text-white font-bold mb-3 sm:mb-4",
-                    "text-xl sm:text-2xl lg:text-3xl",
+                    "text-white font-bold mb-2 sm:mb-3 lg:mb-4",
+                    "text-lg sm:text-xl md:text-2xl lg:text-3xl",
                     "group-hover:text-[#bbdce3] transition-colors duration-300"
                   )}>
                     {work.name}
                   </h3>
                   <p className={cn(
                     "text-gray-200 leading-relaxed",
-                    "text-base sm:text-lg",
-                    "max-w-lg"
+                    "text-sm sm:text-base lg:text-lg",
+                    "max-w-full lg:max-w-lg"
                   )}>
                     {work.description}
                   </p>

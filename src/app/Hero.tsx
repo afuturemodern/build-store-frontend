@@ -30,9 +30,8 @@ function Hero() {
             $BUILD with the best.
             </h1>
         <p className={cn(
-          "text-xl", 
-          "max-w-72",
-          "md:min-w-fit"
+          "text-lg sm:text-xl", 
+          "max-w-full sm:max-w-md lg:max-w-lg"
           )}>
           $BUILD <strong>a team</strong> from our handpicked talent pool of
           Fortune 500-level creative, science, technology, engineering, math
@@ -41,8 +40,10 @@ function Hero() {
         </p>
         <div
           className={cn(
-            "flex flex-col justify-between gap-4"
-            // "lg: flex flex-row justify-around w-full"
+            "flex flex-col sm:flex-row",
+            "gap-4",
+            "w-full sm:w-auto",
+            "justify-center"
           )}
         >
           <Link
@@ -50,8 +51,8 @@ function Hero() {
             className={cn(
               "inline-flex items-center justify-center",
               "border border-white text-white hover:bg-white hover:text-black",
-              "leading-8",
-              "min-w-72",
+              "py-3 px-8",
+              "w-full sm:w-auto sm:min-w-[200px]",
               "rounded-full",
               "transition-colors duration-200",
               "focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
@@ -64,8 +65,8 @@ function Hero() {
             className={cn(
               "inline-flex items-center justify-center",
               "border border-white text-white hover:bg-white hover:text-black",
-              "leading-8",
-              "min-w-72",
+              "py-3 px-8",
+              "w-full sm:w-auto sm:min-w-[200px]",
               "rounded-full",
               "transition-colors duration-200",
               "focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
