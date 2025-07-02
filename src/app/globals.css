@@ -3,34 +3,7 @@
 @tailwind utilities;
 
 /* Single set of keyframes for each screen size */
-@keyframes scroll-mobile {
-  0% {
-    transform: translateX(100vw);
-  }
-  100% {
-    transform: translateX(-100vw);
-  }
-}
-
-@keyframes scroll-tablet {
-  0% {
-    transform: translateX(100vw);
-  }
-  100% {
-    transform: translateX(-100vw);
-  }
-}
-
-@keyframes scroll-desktop {
-  0% {
-    transform: translateX(100vw);
-  }
-  100% {
-    transform: translateX(-100vw);
-  }
-}
-
-@keyframes scroll-extra-wide {
+@keyframes scroll-continuous {
   0% {
     transform: translateX(100vw);
   }
@@ -41,44 +14,44 @@
 
 /* P1 classes - no delay */
 .animate-scroll-mobile-p1 { 
-  animation: scroll-mobile 10s linear infinite;
+  animation: scroll-continuous 24s linear infinite;
   animation-fill-mode: forwards;
 }
 .animate-scroll-tablet-p1 { 
-  animation: scroll-tablet 12s linear infinite;
+  animation: scroll-continuous 24s linear infinite;
   animation-fill-mode: forwards;
 }
 .animate-scroll-desktop-p1 { 
-  animation: scroll-desktop 24s linear infinite;
+  animation: scroll-continuous 48s linear infinite;
   animation-fill-mode: forwards;
 }
 .animate-scroll-extra-wide-p1 { 
-  animation: scroll-extra-wide 32s linear infinite;
+  animation: scroll-continuous 24s linear infinite;
   animation-fill-mode: forwards;
 }
 
-/* P2 classes - SAME keyframes and durations, delayed by exactly half duration (π phase offset) play around with positive and negative delay values -BC*/
+/* P2 classes - SAME keyframes and durations, delayed by exactly half duration (π phase offset) */
 .animate-scroll-mobile-p2 { 
   transform: translateX(100vw);
-  animation: scroll-mobile 10s linear infinite;
-  animation-delay: 5s; /* Half of 10s */
+  animation: scroll-continuous 24s linear infinite;
+  animation-delay: 12s; /* Half of 24s */
   animation-fill-mode: forwards;
 }
 .animate-scroll-tablet-p2 { 
   transform: translateX(100vw);
-  animation: scroll-tablet 12s linear infinite;
-  animation-delay: 6s; /* Half of 12s */
+  animation: scroll-continuous 24s linear infinite;
+  animation-delay: 12s; /* Half of 24s */
   animation-fill-mode: forwards;
 }
 .animate-scroll-desktop-p2 { 
   transform: translateX(100vw);
-  animation: scroll-desktop 24s linear infinite;
-  animation-delay: 12s; /* Half of 24s */
+  animation: scroll-continuous 48s linear infinite;
+  animation-delay: 24s; /* Half of 48s */
   animation-fill-mode: forwards;
 }
 .animate-scroll-extra-wide-p2 { 
   transform: translateX(100vw);
-  animation: scroll-extra-wide 32s linear infinite;
-  animation-delay: 16s; /* Half of 32s */
+  animation: scroll-continuous 24s linear infinite;
+  animation-delay: 12s; /* Half of 64s */
   animation-fill-mode: forwards;
 }
