@@ -42,31 +42,21 @@ function Header() {
           "mx-2"
         )}
       >
-        <p
-          className={cn(
-            "flex-none",
-            "animate-scroll-mobile-p1",
-            "sm:animate-scroll-tablet-p1",
-            "md:animate-scroll-desktop-p1",
-            "lg:animate-scroll-extra-wide-p1"
-          )}
-        >
-          world-$BUILDing people+products.&nbsp;
-        </p>
-        {DEBUG_SHOW_SECOND_PARAGRAPH && (
-          <p
-            className={cn(
-              "flex-none",
-              "animate-scroll-mobile-p2",
-              "sm:animate-scroll-tablet-p2",
-              "md:animate-scroll-desktop-p2",
-              "lg:animate-scroll-extra-wide-p2",
-              "text-green-500"
-            )}
-          >
-            world-$BUILDing people+products.&nbsp;
-          </p>
-        )}
+        {[...Array(2)].map((n,idx) => {
+          return (
+            <p key={idx}
+              className={cn(
+                "flex-none",
+                "animate-scroll-mobile-p1",
+                "sm:animate-scroll-tablet-p1",
+                "md:animate-scroll-desktop-p1",
+                "lg:animate-scroll-extra-wide-p1"
+              )}
+            >
+              world-$BUILDing people+products.&nbsp;
+            </p>
+          );
+        })}
       </section>
 
       <nav

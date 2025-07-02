@@ -5,16 +5,16 @@
 /* Single set of keyframes for each screen size */
 @keyframes scroll-continuous {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(100%);
   }
 }
 
 /* P1 classes - no delay */
 .animate-scroll-mobile-p1 { 
-  animation: scroll-continuous 24s linear infinite;
+  animation: scroll-continuous 5s linear infinite;
   animation-fill-mode: forwards;
 }
 .animate-scroll-tablet-p1 { 
