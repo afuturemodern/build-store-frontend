@@ -16,7 +16,7 @@ function Splash() {
         "lg:pl-48"
       )}
     >
-      <Link href="/" className={cn("")}>
+      <Link href="/">
         <img className="h-16 aspect-square" src="logo.png" alt="Logo" />
       </Link>
       <div className="flex flex-col gap-8 max-w-lg text-white text-lg">
