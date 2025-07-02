@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 function Header() {
+  const DEBUG_SHOW_SECOND_PARAGRAPH = true;
   return (
     <header
       className={cn(
@@ -43,25 +44,29 @@ function Header() {
       >
         <p
           className={cn(
-            "w-full flex-none ",
-            "animate-scroll-mobile",
-            "sm:animate-scroll-tablet",
-            "md:animate-scroll-desktop",
-            "lg:animate-scroll-extra-wide"
+            "flex-none",
+            "animate-scroll-mobile-p1",
+            "animate-scroll-tablet-p1",
+            "animate-scroll-desktop-p1",
+            "animate-scroll-extra-wide-p1",
+            "text-green-500"
           )}
         >
           world-$BUILDing people+products.
         </p>
-        <p
-          className={cn(
-            "w-full flex-none ",
-            "animate-scroll-mobile",
-            "sm:animate-scroll-tablet",
-            "md:animate-scroll-single"
+        {DEBUG_SHOW_SECOND_PARAGRAPH && (
+          <p
+            className={cn(
+              "flex-none",
+            "animate-scroll-mobile-p2",
+            "animate-scroll-tablet-p2",
+            "animate-scroll-desktop-p2",
+            "animate-scroll-extra-wide-p2"
           )}
         >
-          world-$BUILDing people+products.
-        </p>
+            world-$BUILDing people+products.
+          </p>
+        )}
       </section>
 
       <nav
