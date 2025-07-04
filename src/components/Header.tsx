@@ -1,6 +1,7 @@
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 function Header() {
   const DEBUG_SHOW_SECOND_PARAGRAPH = true;
@@ -31,33 +32,12 @@ function Header() {
         />
       </Link>
 
-      {/* Scrolling text container */}
-      <section
-        className={cn(
-          "text-xs sm:text-sm md:text-base font-medium text-gray-700",
-          "whitespace-nowrap",
-          "w-full",
-          "flex",
-          "overflow-hidden",
-          "mx-2"
-        )}
-      >
-        {[...Array(2)].map((n,idx) => {
-          return (
-            <p key={idx}
-              className={cn(
-                "flex-none",
-                "animate-scroll-mobile-p1",
-                "sm:animate-scroll-tablet-p1",
-                "md:animate-scroll-desktop-p1",
-                "lg:animate-scroll-extra-wide-p1"
-              )}
-            >
-              world-$BUILDing people+products.&nbsp;
-            </p>
-          );
-        })}
-      </section>
+      {/* Marquee container */}
+
+      <Marquee>
+        world-$BUILDing people+products.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </Marquee>
 
       <nav
         role="navigation"
@@ -83,5 +63,6 @@ function Header() {
     </header>
   );
 }
+
 
 export default Header;
