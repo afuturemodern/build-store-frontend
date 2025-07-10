@@ -14,9 +14,9 @@ function InitialForm() {
         const lastname = formData.get("last_name") as string;
         const email = formData.get("email_address") as string;
         const phone = formData.get("phone_number") as string;
-        // const project_description = formData.get("project_description");
+        const project_description = formData.get("project_description") as string;
 
-        submitForm({ firstname, lastname, email, phone });
+        submitForm({ firstname, lastname, email, phone, project_description });
       }}
       className={cn(
         "flex flex-col gap-4 bg-white",
