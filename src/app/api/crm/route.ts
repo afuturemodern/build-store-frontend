@@ -27,8 +27,6 @@ export async function POST(request: Request) {
     return result.json();
   });
 
-  console.log({ contactRequestResponse });
-
   if (contactRequestResponse.status === "error") {
     logger.error("hubspot api error");
     return Response.json({ error: true });
@@ -77,8 +75,6 @@ export async function POST(request: Request) {
   }).then((result) => {
     return result.json();
   });
-
-  console.log({ dealRequestResponse });
 
   if (dealRequestResponse.status === "error") {
     logger.error("hubspot deal request error");
