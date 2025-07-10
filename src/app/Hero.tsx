@@ -1,4 +1,6 @@
 import { cn } from "@/utils/cn";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Hero() {
@@ -11,14 +13,14 @@ function Hero() {
       )}>
       <div
         className={cn(
-          "py-16",
-          "px-8",
-          "gap-8",
+          "py-12 sm:py-16 lg:py-20 xl:py-24",
+          "px-4 sm:px-6 lg:px-8",
+          "max-w-7xl mx-auto w-full",
+          "gap-6 sm:gap-8 lg:gap-10",
           "flex flex-col",
-          "justify-around",
+          "justify-center",
           "items-center",
           "text-center"
-
         )}
       >
         <h1 className={cn(
@@ -28,9 +30,8 @@ function Hero() {
             $BUILD with the best.
             </h1>
         <p className={cn(
-          "text-xl", 
-          "max-w-72",
-          "md:min-w-fit"
+          "text-lg sm:text-xl", 
+          "max-w-full sm:max-w-md lg:max-w-lg"
           )}>
           $BUILD <strong>a team</strong> from our handpicked talent pool of
           Fortune 500-level creative, science, technology, engineering, math
@@ -39,38 +40,51 @@ function Hero() {
         </p>
         <div
           className={cn(
-            "flex flex-col justify-between gap-4"
-            // "lg: flex flex-row justify-around w-full"
+            "flex flex-col sm:flex-row",
+            "gap-4",
+            "w-full sm:w-auto",
+            "justify-center"
           )}
         >
-          <button
+          <Link
+            href="/signup"
             className={cn(
-              "border border-white",
-              "leading-8",
-              "min-w-72",
-              "rounded-full"
+              "inline-flex items-center justify-center",
+              "border border-white text-white hover:bg-white hover:text-black",
+              "py-3 px-8",
+              "w-full sm:w-auto sm:min-w-[200px]",
+              "rounded-full",
+              "transition-colors duration-200",
+              "focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
             )}
           >
             Get Started
-          </button>
-          <button
+          </Link>
+          <Link
+            href="/signup"
             className={cn(
-              "border border-white",
-              "leading-8",
-              "min-w-72",
-              "rounded-full"
+              "inline-flex items-center justify-center",
+              "border border-white text-white hover:bg-white hover:text-black",
+              "py-3 px-8",
+              "w-full sm:w-auto sm:min-w-[200px]",
+              "rounded-full",
+              "transition-colors duration-200",
+              "focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
             )}
           >
             Schedule a Call
-          </button>
+          </Link>
         </div>
       </div>
-      <img className={cn(
-        "w-full" 
-      )}
-        src="hero.webp" 
-        alt="Hero Image">
-        </img>
+      <Image 
+        className={cn(
+          "w-full" 
+        )}
+        src="/hero.webp" 
+        alt="Hero Image"
+        width={1000}
+        height={1000}
+      />
     </section>
   );
 }
