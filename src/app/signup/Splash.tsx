@@ -18,7 +18,7 @@ function Splash() {
       <Link href="/" className={cn("mb-8 lg:mb-0")}>
         <Image 
           className="h-12 sm:h-16 w-auto" 
-          src="/fm clr turtle alt full.svg" 
+          src="/logo.png" 
           alt="$BUILD Store Logo"
           width={64}
           height={64}

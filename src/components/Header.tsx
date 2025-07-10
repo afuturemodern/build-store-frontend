@@ -4,7 +4,6 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 function Header() {
-  const DEBUG_SHOW_SECOND_PARAGRAPH = true;
   return (
     <header
       className={cn(

@@ -28,8 +28,8 @@ function InitialForm() {
         "py-8 sm:py-12"
       )}
     >
-      <h1 className="text-2xl sm:text-3xl font-bold text-center sm:text-left">Sign up to $BUILD your team.</h1>
-      <div className={cn("flex flex-col sm:flex-row gap-4")}>
+      <h1 className="pb-8 text-xl">Sign up to $BUILD your team.</h1>
+      <div className={cn("flex sm:flex-row gap-4")}>
         <section className={cn("flex flex-col flex-1")}>
           <label className={cn("text-sm font-medium mb-1")}>First Name</label>
           <input
