@@ -10,11 +10,13 @@ export function useSignupForm() {
     lastname,
     email,
     phone,
+    project_description,
   }: {
     firstname: string;
     lastname: string;
     email: string;
     phone: string;
+    project_description: string;
   }) {
     setLoading(true);
     fetch("/api/crm", {
@@ -24,6 +26,7 @@ export function useSignupForm() {
         lastname,
         email,
         phone,
+        project_description
       }),
     })
       .then((result) => {
@@ -40,8 +43,8 @@ export function useSignupForm() {
       })
       .catch((error) => {
         setLoading(false);
-        console.error(error)
-        setFormStatus("error")
+        console.error(error);
+        setFormStatus("error");
       });
   }
 
@@ -49,5 +52,5 @@ export function useSignupForm() {
     setFormStatus("init");
   }
 
-  return {formStatus, loading, submitForm, resetForm}
+  return { formStatus, loading, submitForm, resetForm };
 }
