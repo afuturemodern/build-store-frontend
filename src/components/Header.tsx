@@ -34,7 +34,7 @@ function Header() {
 
       {/* Marquee container */}
 
-      <Marquee>
+      <Marquee gradient gradientWidth={30} className="mx-1">
         world-$BUILDing people+products.
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </Marquee>
