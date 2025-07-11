@@ -5,19 +5,21 @@ import processSteps from "./ProcessSteps.json";
 function OurProcess() {
   return (
     <section className={cn("bg-black", "flex flex-col")}>
-      <div
+      <header
         className={cn(
-          "bg-[#bbdce3]", 
-          "w-full", 
-          "py-8 sm:py-12 lg:py-16", 
-          "px-4 sm:px-6 lg:px-8", 
+          "bg-[#bbdce3]",
+          "w-full",
+          "py-8 sm:py-12 lg:py-16",
+          "px-4 sm:px-6 lg:px-8",
           "relative"
         )}
       >
-        <div className="max-w-7xl mx-auto">
-          <h2 className={cn("text-2xl sm:text-3xl lg:text-4xl font-bold text-left")}>our process.</h2>
-        </div>
-      </div>
+        <h1
+          className={cn("text-2xl sm:text-3xl lg:text-4xl font-bold text-left")}
+        >
+          our process.
+        </h1>
+      </header>
       {processSteps.map((step, idx, oArr) => {
         return (
           <div
@@ -37,20 +39,25 @@ function OurProcess() {
               "items-start"
             )}
           >
-            <div className="max-w-4xl">
-              <h3 className={cn(
-                "text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold", 
-                "mb-4 sm:mb-6"
-              )}>
+            {/* <div className="max-w-4xl"> */}
+              <h2
+                className={cn(
+                  "text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold",
+                  "mb-4 sm:mb-6"
+                )}
+              >
                 {step.name}
-              </h3>
-              <p className={cn(
-                "text-lg sm:text-xl lg:text-2xl", 
-                "leading-relaxed max-w-3xl"
-              )}>
+              </h2>
+              <p
+                className={cn(
+                  "text-lg sm:text-xl lg:text-2xl",
+                  "leading-relaxed",
+                  // "max-w-3xl"
+                )}
+              >
                 {step.description}
               </p>
-            </div>
+            {/* </div> */}
           </div>
         );
       })}

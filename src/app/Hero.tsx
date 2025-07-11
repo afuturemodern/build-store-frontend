@@ -14,13 +14,13 @@ function Hero() {
       <div
         className={cn(
           "py-12 sm:py-16 lg:py-20 xl:py-24",
-          "px-4 sm:px-6 lg:px-8",
+          "px-8 sm:px-6 lg:px-8",
           "max-w-7xl mx-auto w-full",
           "gap-6 sm:gap-8 lg:gap-10",
           "flex flex-col",
           "justify-center",
           "items-center",
-          "text-center"
+          // "text-center"
         )}
       >
         <h1 className={cn(
