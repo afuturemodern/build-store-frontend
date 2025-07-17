@@ -7,6 +7,9 @@ function SuccessForm() {
     successSection?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
+  const titleText = "We successfully received your information :)"
+  const subtitleText = "We'll email you soon to schedule a follow-up call."
+
   return (
     <section
       id="success_section"
@@ -20,10 +23,10 @@ function SuccessForm() {
         <path d="M0 3v18h24v-18h-24zm22 16l-6.526-6.618-3.445 3.483-3.418-3.525-6.611 6.66 5.051-8-5.051-6 10.029 7.446 9.971-7.446-4.998 6.01 4.998 7.99z" />
       </svg>
       <h2 className="text-lg font-extrabold">
-        We successfully received your information :)
+        {titleText}
       </h2>
       <p className="text-xs pb-4">
-        We'll email you soon to schedule a follow-up call.
+        {subtitleText}
       </p>
       <button
         className={cn(
