@@ -3,8 +3,9 @@
 - style hero on mobile: 
     - format text
     - take up less width
-- build intake form success page
-- build intake form error page
+- intake form success page
+- intake form error page
+- client signup email verification flow
 - add salahclock referral link
 - add Muhammad to core contributors component
 - robustisize intake form error handling
