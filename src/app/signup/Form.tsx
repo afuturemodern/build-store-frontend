@@ -11,9 +11,7 @@ function Form() {
   const { formStatus } = useContext(SignupFormContext);
 
   return (
-    <div className={cn(
-      "w-full"
-    )}>
+    <div className={cn("w-full")}>
       {formStatus === "init" ? (
         <InitialForm />
       ) : formStatus.startsWith("error") ? (
