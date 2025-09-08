@@ -1,6 +1,6 @@
 # TODOS
 ## short-term
-- style mobile hero: 
+- ~~style mobile hero:~~  
     - ~~left-align text~~
     - ~~decrease text width~~
 - ensure link preview displays future modern logo / image
