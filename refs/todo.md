@@ -4,10 +4,10 @@
     - ~~left-align text~~
     - ~~decrease text width~~
 - ensure link preview displays future modern logo / image
-- correct / remove OurWork DataExplorer card
-- add URL Collective website card to OurWork component
+- ~~correct / remove OurWork DataExplorer card~~
+- ~~add URL Collective website card to OurWork component~~
 - add future modern Bonfire card to OurWork component
-- Revisit "$BUILD a Team" and "Schedule a Call" calls-to-action at the end of OurWork section
+- Repeat "$BUILD a Team" and "Schedule a Call" calls-to-action at the end of OurWork section
 - make signup Splash text more visible by changing background color
 - ~~link the Schedule a Call button to our Calendly~~
 - add Muhammad's card to OurPeople component

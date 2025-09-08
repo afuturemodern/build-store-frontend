@@ -18,6 +18,12 @@
 
     },
     {
+        "img_url":"/people/muhammad.png",
+        "name":"Muhammad",
+        "role":"Software Development, Advisor"
+
+    },
+    {
         "img_url":"/people/ron.jpg",
         "name":"Ron",
         "role":"People, Brand"
@@ -68,7 +74,7 @@
     {
         "img_url":"/people/michael.jpeg",
         "name":"Michael, PhD dropout",
-        "role":"Software, Advisor"
+        "role":"Software Development, Advisor"
 
     },
     {
