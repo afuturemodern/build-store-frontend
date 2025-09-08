@@ -35,7 +35,7 @@ const compentenciesSection: CompetencyObject[] = [
     ],
   },
   {
-    headingText: "business and professional",
+    headingText: "business and credentialed",
     color: "#02734a",
     icon: "chart",
     listItems: [
@@ -46,12 +46,13 @@ const compentenciesSection: CompetencyObject[] = [
       "managed services",
       "product management",
       "strategy",
+      "general securities representation",
       "blockchain law",
-      "intellectual property (ip) law",
+      "intellectual property (IP) law",
       "health law",
       "pharmaceuticals, pharmaceutical marketing, & medical writing",
       "psychology and psychiatry",
-      "family medice",
+      "family medicine",
     ],
   },
   {

@@ -1,20 +1,62 @@
 # TODOS
 ## short-term
-- style hero on mobile: 
-    - format text
-    - take up less width
-- intake form success page
-- intake form error page
-- client signup email verification flow
-- add salahclock referral link
-- add Muhammad to core contributors component
+- style mobile hero: 
+    - ~~left-align text~~
+    - ~~decrease text width~~
+- ensure link preview displays future modern logo / image
+- correct / remove OurWork DataExplorer card
+- add URL Collective website card to OurWork component
+- add future modern Bonfire card to OurWork component
+- Revisit "$BUILD a Team" and "Schedule a Call" calls-to-action at the end of OurWork section
+- make signup Splash text more visible by changing background color
+- ~~link the Schedule a Call button to our Calendly~~
+- add Muhammad's card to OurPeople component
+- add previous experience Marquee to OurPeople component
+- add salahclock affiliate link card to OurPartners component
+- center OurPeople cards on final row
+- design client signup form success page
+- build client signup form success page
+- design client signup form error page
+- build client signup form error page
+- design "Hire Talent" versus "$BUILD a team" branching flow
+    - both the "Hire Talent" and "$BUILD a team" pages will include these form fields:
+        - ~~First Name~~
+        - ~~Last Name~~
+        - ~~Email Address~~
+        - ~~Phone Number~~
+        - "What general areas will the role(s) relate to?" dropdown multiselector with the following options:
+            - Creative
+            - Technical
+            - Business / Credentialed
+            - Teaching
+            - Unsure. If Unsure: 
+                - funnel to future modern Calendly link for discovery call
+        - Given selection other than "Unsure" for "What general areas will the role(s) relate to" field, display "What specific roles you'll need?" dropdown multiselectior
+            - present services list in multiselect dropdown
+            - Other. If Other: 
+                - display free text field to type in role name
+            - Unsure. If Unsure:
+                - funnel to future modern Calendly link for discovery call
+            If selection made other than "Unsure" for "What specific roles you'll need?" dropdown multiselectior, enable optional pdf job description attachment upload per selected role
+    - "Hire Talent" page, but not "$BUILD a team" page, will include these form fields:
+        - Job Title
+    - "$BUILD a team" page, but not "Hire Talent" page, will include these form fields:
+        - Project Description 
+- add FAQ component, emphasizing we don't use flowery language to hide our pricing and charge a flat 15% markup
+- add ContactUs component, either within or linked from the Footer component. List:
+    - Company Email Address
+    - Jamar's Phone Number
+    - Chibu's Phone Number
+- implement header/navbar hamburger menu, which appears to the right of the "$BUILD a Team" button, hiding the button on extra-small screens. Clicking hamburger menu should dropdown display the following selections:
+    - 
+- implement client signup email verification flow
+    - send sign-up email confirmation on successful client intake form submission
 - robustisize intake form error handling
-- optimize web UI
+- optimize desktop web UI
     - unify text alignment throughout homepage
     - beautify section banners
-- correct / remove Notion affiliate link
+- ~~correct / remove Notion affiliate link~~
 - fix logo SVGs to reduce loading time
-- send sign-up email confirmation on successful client intake form submission
 - Associate new contacts with companies
 
 ## midterm

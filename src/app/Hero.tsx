@@ -61,7 +61,7 @@ function Hero() {
             Get Started
           </Link>
           <Link
-            href="/signup"
+            href="https://calendly.com/a-future-modern"
             className={cn(
               "inline-flex items-center justify-center",
               "border border-white text-white hover:bg-white hover:text-black",
